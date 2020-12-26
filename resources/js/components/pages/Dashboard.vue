@@ -23,10 +23,10 @@
                             <div class="row my-2">
                                 <div class="col-12">
                                     <router-link :to="{ name: 'NailEdit', params: { uuid: item.id } }" class="btn btn-primary btn-sm">
-                                        <span title="icon name" aria-hidden="true" class="oi oi-pencil mr-2"></span>Изменить
+                                        <span title="icon name" aria-hidden="true" class="oi oi-pencil mr-2"></span>Ред.
                                     </router-link>
                                     <a v-bind:href="'tel:+7'+item.client.phone" class="btn btn-success btn-sm"><img src="img/phone-call.svg" class="mr-2">Позвонить</a>
-                                    <button type="button" class="btn btn-danger btn-sm" @click="delNail(item.id)"><span title="icon name" aria-hidden="true" class="oi oi-circle-x mr-2"></span>Удалить</button>
+                                    <button type="button" class="btn btn-danger btn-sm" @click="delNail(item.id)"><span title="icon name" aria-hidden="true" class="oi oi-circle-x mr-2"></span>Удал.</button>
                                 </div>
                             </div>
                         </div>

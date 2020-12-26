@@ -34,7 +34,7 @@ class NailController extends Controller
                 //dd($item->termin);
                 $out[] = [
                     'id' => $item->id,
-                    'data' => $dataNail->isoFormat('d MMMM'),
+                    'data' => $dataNail->isoFormat('D MMMM'),
                     'time' => $dataNail->format('H:i'),
                     'client' => $item->client
                 ];
