@@ -9,8 +9,8 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Телефон клиента</label>
-                    <the-mask mask="+7 (###) ###-##-##" :ref="'phone'" class="form-control" id="phone" type="tell"
-                              placeholder="+7 (999) 888-77-55" v-model="$v.data.phone.$model" :class="{ 'is-invalid': $v.data.phone.$error }"></the-mask>
+                    <the-mask mask="+7 (###) ###-##-##" :ref="'phone'" class="form-control" id="phone" type="tel"
+                              placeholder="+7 (918) 888-77-55" v-model="$v.data.phone.$model" :class="{ 'is-invalid': $v.data.phone.$error }"></the-mask>
                     <div class="invalid-feedback">Введите телефон клиента</div>
                 </div>
                 <div class="form-group">
