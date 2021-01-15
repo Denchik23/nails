@@ -142,7 +142,7 @@ class ClientController extends Controller
             $search = $request->get('query');
 
             if (!empty($search)) {
-                $users = $client->where('name', 'like', $search.'%')->get();
+                $users = $client->where('name', 'like', '%'.$search.'%')->get();
             }
             return $users;
         }
